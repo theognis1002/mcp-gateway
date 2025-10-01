@@ -156,7 +156,7 @@ func HandleEndpointHTTP(namespaceService NamespaceService) gin.HandlerFunc {
 						},
 					},
 					"serverInfo": gin.H{
-						"name":    "Omnimesh Gateway",
+						"name":    "MCP Gateway",
 						"version": "1.0.0",
 					},
 					"protocolVersion": "2024-11-05",
@@ -230,7 +230,7 @@ func HandleEndpointHTTP(namespaceService NamespaceService) gin.HandlerFunc {
 						},
 					},
 					"serverInfo": gin.H{
-						"name":    "Omnimesh Gateway",
+						"name":    "MCP Gateway",
 						"version": "1.0.0",
 					},
 					"protocolVersion": "2024-11-05",

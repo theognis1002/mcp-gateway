@@ -12,10 +12,10 @@ type ProjectOption = {
 
 const projectOptions: ProjectOption[] = [
 	{
-		value: 'Omnimesh AI Gateway',
+		value: 'MCP Gateway',
 		logo: '/assets/images/logo/omnimesh-gateway.svg',
 		darkLogo: '/assets/images/logo/omnimesh-gateway-dark.svg',
-		name: 'Omnimesh AI Gateway',
+		name: 'MCP Gateway',
 		url: typeof window !== 'undefined' ? window.location.origin : ''
 	}
 ];

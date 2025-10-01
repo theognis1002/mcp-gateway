@@ -80,7 +80,7 @@ function ConfigurationView() {
 			const url = URL.createObjectURL(blob);
 			const a = document.createElement('a');
 			a.href = url;
-			a.download = `omnimesh-gateway-config-${Date.now()}.json`;
+			a.download = `mcp-gateway-config-${Date.now()}.json`;
 			document.body.appendChild(a);
 			a.click();
 			document.body.removeChild(a);
@@ -129,13 +129,13 @@ function ConfigurationView() {
 					<div className="flex items-center justify-between">
 						<div>
 							<Typography variant="h4">Configuration</Typography>
-							<Typography
-								variant="body1"
-								color="textSecondary"
-								className="mt-1"
-							>
-								Export and import your Omnimesh AI Gateway configuration
-							</Typography>
+					<Typography
+						variant="body1"
+						color="textSecondary"
+						className="mt-1"
+					>
+						Export and import your MCP Gateway configuration
+					</Typography>
 						</div>
 					</div>
 				</div>
@@ -171,9 +171,9 @@ function ConfigurationView() {
 
 					{tabValue === 0 && (
 						<Stack spacing={3}>
-							<Alert severity="info">
-								Export your Omnimesh AI Gateway configuration including servers, namespaces, and content.
-							</Alert>
+					<Alert severity="info">
+						Export your MCP Gateway configuration including servers, namespaces, and content.
+					</Alert>
 
 							<Card>
 								<CardContent>

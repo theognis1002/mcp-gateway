@@ -10,31 +10,31 @@ import type { Metadata, Viewport } from 'next';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-	title: 'Omnimesh AI Gateway - Dashboard',
-	description: 'Omnimesh AI Gateway - Production-ready API gateway for Model Context Protocol servers',
+	title: 'MCP Gateway - Dashboard',
+	description: 'MCP Gateway - Production-ready API gateway for Model Context Protocol servers',
 	referrer: 'origin-when-cross-origin',
-	keywords: ['MCP', 'Model Context Protocol', 'API Gateway', 'Omnimesh AI Gateway'],
-	authors: [{ name: 'Omnimesh AI Gateway Team' }],
-	creator: 'Omnimesh AI Gateway Team',
-	publisher: 'Omnimesh AI Gateway Team',
+	keywords: ['MCP', 'Model Context Protocol', 'API Gateway', 'MCP Gateway'],
+	authors: [{ name: 'MCP Gateway Team' }],
+	creator: 'MCP Gateway Team',
+	publisher: 'MCP Gateway Team',
 	robots: 'follow, index',
 	icons: { icon: '/favicon.ico' },
 	manifest: '/manifest.json',
 	metadataBase: new URL('https://github.com/omnimesh-labs/omnimesh-gateway'),
 	openGraph: {
 		url: 'https://github.com/omnimesh-labs/omnimesh-gateway',
-		title: 'Omnimesh AI Gateway - Dashboard',
-		description: 'Omnimesh AI Gateway - Production-ready API gateway for Model Context Protocol servers',
+		title: 'MCP Gateway - Dashboard',
+		description: 'MCP Gateway - Production-ready API gateway for Model Context Protocol servers',
 		images: ['/card.png'],
 		type: 'website',
-		siteName: 'Omnimesh AI Gateway - Dashboard'
+		siteName: 'MCP Gateway - Dashboard'
 	},
 	twitter: {
 		card: 'summary_large_image',
-		site: '@OmnimeshAI',
-		creator: '@OmnimeshAI',
-		title: 'Omnimesh AI Gateway - Dashboard',
-		description: 'Omnimesh AI Gateway - Production-ready API gateway for Model Context Protocol servers',
+		site: '@MCPGateway',
+		creator: '@MCPGateway',
+		title: 'MCP Gateway - Dashboard',
+		description: 'MCP Gateway - Production-ready API gateway for Model Context Protocol servers',
 		images: ['/card.png']
 	},
 	other: {

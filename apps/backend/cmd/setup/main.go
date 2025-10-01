@@ -71,7 +71,7 @@ var setupFunctions = map[string]SetupFunction{
 }
 
 func main() {
-	fmt.Println("🚀 Omnimesh Gateway Local Development Setup")
+	fmt.Println("🚀 MCP Gateway Local Development Setup")
 	fmt.Println("======================================")
 
 	// Load configuration
@@ -428,14 +428,14 @@ func (s *SetupManager) addDefaultResources(orgID uuid.UUID) error {
 			name:         "System Documentation",
 			description:  "Default system documentation resource",
 			resourceType: "url",
-			uri:          "https://docs.example.com/omnimesh-gateway",
+			uri:          "https://docs.example.com/mcp-gateway",
 			mimeType:     "text/html",
 			metadata:     map[string]interface{}{"version": "1.0", "public": true},
 			tags:         []string{"documentation", "system", "help"},
 		},
 		{
 			name:         "API Reference",
-			description:  "Omnimesh Gateway API reference documentation",
+			description:  "MCP Gateway API reference documentation",
 			resourceType: "url",
 			uri:          "https://api.example.com/docs",
 			mimeType:     "application/json",

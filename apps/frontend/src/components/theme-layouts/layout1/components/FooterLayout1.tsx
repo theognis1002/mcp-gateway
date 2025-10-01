@@ -29,8 +29,8 @@ function FooterLayout1(props: FooterLayout1Props) {
 					<div className="flex items-center space-x-2">
 						<span className="muted-foreground·text-sm"></span>
 					</div>
-					<div className="flex items-center space-x-4">
-						<span className="muted-foreground·text-sm">© 2025 Omnimesh AI Gateway. All rights reserved.</span>
+				<div className="flex items-center space-x-4">
+					<span className="muted-foreground·text-sm">© 2025 MCP Gateway. All rights reserved.</span>
 					</div>
 				</Toolbar>
 			</AppBar>

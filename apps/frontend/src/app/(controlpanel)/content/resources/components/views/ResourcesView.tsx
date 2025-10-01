@@ -370,13 +370,13 @@ function ResourcesView() {
 					<div className="flex items-center justify-between">
 						<div>
 							<Typography variant="h4">Resources</Typography>
-							<Typography
-								variant="body1"
-								color="textSecondary"
-								className="mt-1"
-							>
-								Manage your Omnimesh Gateway resources
-							</Typography>
+					<Typography
+						variant="body1"
+						color="textSecondary"
+						className="mt-1"
+					>
+						Manage your MCP Gateway resources
+					</Typography>
 						</div>
 						<Button
 							variant="contained"

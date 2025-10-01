@@ -1,5 +1,5 @@
--- Omnimesh Gateway Database ERD Implementation
--- This migration implements the complete ERD schema for the Omnimesh Gateway
+-- MCP Gateway Database ERD Implementation
+-- This migration implements the complete ERD schema for the MCP Gateway
 
 -- Required extensions
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";    -- For UUID generation

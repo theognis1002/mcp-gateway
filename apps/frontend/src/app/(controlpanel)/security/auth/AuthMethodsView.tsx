@@ -241,8 +241,8 @@ function AuthMethodsView() {
 
 					{tabValue === 0 && (
 						<Stack spacing={3}>
-							<Alert severity="info">
-								Configure which authentication methods are available for your Omnimesh Gateway instance.
+					<Alert severity="info">
+						Configure which authentication methods are available for your MCP Gateway instance.
 							</Alert>
 
 							<Card>

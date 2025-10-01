@@ -136,14 +136,14 @@ func (g *OpenAPIGenerator) GenerateSpec(endpoint *types.Endpoint, namespace *typ
 	spec := &OpenAPISpec{
 		OpenAPI: "3.0.0",
 		Info: Info{
-			Title:       fmt.Sprintf("%s - Omnimesh AI Gateway", endpoint.Name),
+			Title:       fmt.Sprintf("%s - MCP Gateway", endpoint.Name),
 			Description: g.generateDescription(endpoint, namespace),
 			Version:     "1.0.0",
 		},
 		Servers: []Server{
 			{
 				URL:         fmt.Sprintf("%s/api/public/endpoints/%s/api", g.baseURL, endpoint.Name),
-				Description: "Omnimesh AI Gateway Endpoint API",
+				Description: "MCP Gateway Endpoint API",
 			},
 		},
 		Paths:      make(map[string]PathItem),

@@ -329,7 +329,7 @@ func (h *MCPHandler) HandleMCPCapabilities(c *gin.Context) {
 		},
 		"protocol_version": "2024-11-05",
 		"server_info": gin.H{
-			"name":    "Omnimesh Gateway",
+			"name":    "MCP Gateway",
 			"version": "1.0.0",
 		},
 		"transports": []string{

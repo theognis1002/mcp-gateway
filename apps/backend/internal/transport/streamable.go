@@ -151,7 +151,7 @@ func (s *StreamableHTTPTransport) SendMessage(ctx context.Context, message inter
 		return fmt.Errorf("failed to convert message: %w", err)
 	}
 
-	// For the Omnimesh Gateway, we work internally without external HTTP requests
+	// For the MCP Gateway, we work internally without external HTTP requests
 	// Instead of making HTTP requests, we process the message internally
 	return s.processMessageInternally(ctx, request)
 }

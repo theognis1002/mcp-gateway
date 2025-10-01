@@ -1,4 +1,4 @@
--- Initial schema for Omnimesh Gateway
+-- Initial schema for MCP Gateway
 
 -- Organizations table
 CREATE TABLE organizations (

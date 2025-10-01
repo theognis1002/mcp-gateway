@@ -629,7 +629,7 @@ func (h *RPCHandler) HandleRPCIntrospection(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{
 		"methods":     methods,
-		"description": "Omnimesh Gateway JSON-RPC API",
+		"description": "MCP Gateway JSON-RPC API",
 		"version":     "2024-11-05",
 		"transport":   "HTTP",
 	})
