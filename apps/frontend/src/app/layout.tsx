@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 	robots: 'follow, index',
 	icons: { icon: '/favicon.ico' },
 	manifest: '/manifest.json',
-	metadataBase: new URL('https://github.com/omnimesh-labs/omnimesh-gateway'),
+	metadataBase: new URL('https://github.com/mcp-gateway/mcp-gateway'),
 	openGraph: {
-		url: 'https://github.com/omnimesh-labs/omnimesh-gateway',
+		url: 'https://github.com/mcp-gateway/mcp-gateway',
 		title: 'MCP Gateway - Dashboard',
 		description: 'MCP Gateway - Production-ready API gateway for Model Context Protocol servers',
 		images: ['/card.png'],

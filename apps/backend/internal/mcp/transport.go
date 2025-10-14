@@ -2,7 +2,7 @@ package mcp
 
 import (
 	"context"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 )
 
 // Transport defines the interface for different MCP transport mechanisms

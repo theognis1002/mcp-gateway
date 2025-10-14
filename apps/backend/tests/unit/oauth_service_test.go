@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/auth"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/tests/helpers"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/auth"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/tests/helpers"
 )
 
 // OAuthServiceTestSuite provides test setup for OAuth service unit tests

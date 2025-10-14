@@ -1,5 +1,5 @@
 {
-	"name": "omnimesh-ai-gateway-app",
+	"name": "mcp-gateway-ai-gateway-app",
 	"version": "16.0.0",
 	"private": true,
 	"type": "module",

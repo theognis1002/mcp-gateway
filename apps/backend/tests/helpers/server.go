@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/config"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/database"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/logging"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/logging/plugins/file"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/server"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/config"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/database"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/logging"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/logging/plugins/file"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/server"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 )
 
 var (

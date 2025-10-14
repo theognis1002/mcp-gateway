@@ -1,7 +1,7 @@
 package plugins
 
 import (
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/plugins/shared"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/plugins/shared"
 )
 
 // Re-export all shared types for local use

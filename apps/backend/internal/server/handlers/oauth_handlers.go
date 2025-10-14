@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/base64"
 	"net/http"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/auth"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/auth"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 	"strings"
 
 	"github.com/gin-gonic/gin"

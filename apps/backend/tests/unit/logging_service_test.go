@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/logging"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/logging"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

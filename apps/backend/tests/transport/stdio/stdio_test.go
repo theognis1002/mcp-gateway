@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/tests/helpers"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/tests/helpers"
 )
 
 func TestSTDIOHealth(t *testing.T) {
@@ -263,7 +263,7 @@ func TestSTDIOSendMessage(t *testing.T) {
 					},
 				},
 				"clientInfo": map[string]interface{}{
-					"name":    "omnimesh-gateway",
+					"name":    "mcp-gateway",
 					"version": "1.0.0",
 				},
 			},

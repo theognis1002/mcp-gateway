@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/database/models"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/database/models"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

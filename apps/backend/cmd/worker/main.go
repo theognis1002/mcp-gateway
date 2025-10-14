@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/config"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/database"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/discovery"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/transport"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/config"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/database"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/discovery"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/transport"
 )
 
 func main() {

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/google/uuid"
 )
@@ -262,7 +262,7 @@ func (s *Service) getServerCapabilities(ctx context.Context, transport types.Tra
 		Params: map[string]interface{}{
 			"protocolVersion": "1.0.0",
 			"clientInfo": map[string]interface{}{
-				"name":    "omnimesh-gateway-inspector",
+				"name":    "mcp-gateway-inspector",
 				"version": "1.0.0",
 			},
 		},

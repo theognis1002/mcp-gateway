@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/config"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/database/models"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/config"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/database/models"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/google/uuid"
 	_ "github.com/lib/pq"

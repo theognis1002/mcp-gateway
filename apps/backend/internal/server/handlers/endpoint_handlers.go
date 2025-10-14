@@ -3,7 +3,7 @@ package handlers
 import (
 	"context"
 	"net/http"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/gin-gonic/gin"
 )

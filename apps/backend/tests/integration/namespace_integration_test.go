@@ -15,10 +15,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/server/handlers"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/services"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/tests/helpers"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/server/handlers"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/services"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/tests/helpers"
 )
 
 // NamespaceIntegrationTestSuite tests the namespace feature end-to-end

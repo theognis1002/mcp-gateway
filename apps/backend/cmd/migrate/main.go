@@ -14,7 +14,7 @@ import (
 	_ "github.com/lib/pq"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/config"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/config"
 )
 
 func main() {

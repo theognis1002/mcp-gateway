@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/inspector"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/inspector"
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"

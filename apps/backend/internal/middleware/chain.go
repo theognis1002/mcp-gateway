@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/config"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/config"
 
 	"github.com/gin-gonic/gin"
 )

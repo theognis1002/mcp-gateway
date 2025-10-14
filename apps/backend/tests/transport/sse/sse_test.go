@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/tests/helpers"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/tests/helpers"
 )
 
 func TestSSEConnection(t *testing.T) {

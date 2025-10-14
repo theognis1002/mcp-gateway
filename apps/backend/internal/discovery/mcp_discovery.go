@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 )
 
 // MCPDiscoveryService handles external MCP package discovery

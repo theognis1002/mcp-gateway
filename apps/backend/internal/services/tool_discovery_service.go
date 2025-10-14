@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/database/models"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/transport"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/database/models"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/transport"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/google/uuid"
 )

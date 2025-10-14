@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/logging"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/logging"
 )
 
 // AWSStorageBackend implements logging.StorageBackend for AWS services
@@ -53,7 +53,7 @@ func DefaultAWSConfig() *AWSConfig {
 	return &AWSConfig{
 		Service:       "cloudwatch",
 		Region:        "us-east-1",
-		LogGroup:      "omnimesh-gateway",
+		LogGroup:      "mcp-gateway",
 		LogStream:     "application",
 		BatchSize:     25,
 		FlushInterval: 5 * time.Second,

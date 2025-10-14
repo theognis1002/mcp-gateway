@@ -1,4 +1,4 @@
-# Omnimesh AI Gateway Makefile
+# MCP Gateway Makefile
 .PHONY: help dev stop clean test migrate lint setup shell bash migrate-down migrate-status setup-admin logs nuclear restart prune docker-prune docker-reset
 
 # Docker compose command detection - use 'docker compose' if available, fallback to 'docker-compose'
@@ -10,7 +10,7 @@ GO = $(BACKEND) go
 
 # Default target - show help
 help:
-	@echo "Omnimesh AI Gateway - Available Commands"
+	@echo "MCP Gateway - Available Commands"
 	@echo ""
 	@echo "Quick Start:"
 	@echo "  make setup        - Complete production setup (DB + frontend + backend + admin)"
@@ -64,19 +64,19 @@ help:
 dev:
 	@$(DOCKER_COMPOSE) down -v --remove-orphans --rmi local 2>/dev/null || true
 	@if [ ! -f .env ]; then cp .env.example .env; fi
-	@echo "Starting Omnimesh AI Gateway in development mode..."
+	@echo "Starting MCP Gateway in development mode..."
 	@$(DOCKER_COMPOSE) up postgres redis backend
 
 # Stop all services
 stop:
-	@echo "Stopping Omnimesh AI Gateway Stack..."
+	@echo "Stopping MCP Gateway Stack..."
 	@$(DOCKER_COMPOSE) down --remove-orphans
 	@$(DOCKER_COMPOSE_PROD) down --remove-orphans
 	@echo "All services stopped"
 
 # Clean everything (including volumes)
 clean:
-	@echo "Cleaning Omnimesh AI Gateway Stack (removes all data)..."
+	@echo "Cleaning MCP Gateway Stack (removes all data)..."
 	@$(DOCKER_COMPOSE) down -v --remove-orphans --rmi local
 	@$(DOCKER_COMPOSE_PROD) down -v --remove-orphans --rmi local
 	@docker system prune -f
@@ -140,7 +140,7 @@ migrate-status:
 
 # Complete setup - runs production stack with full setup
 setup:
-	@echo "Setting up Omnimesh AI Gateway Stack (production build with frontend)..."
+	@echo "Setting up MCP Gateway Stack (production build with frontend)..."
 	@if [ ! -f .env ]; then \
 		echo "Creating .env file from .env.example..."; \
 		cp .env.example .env; \
@@ -174,7 +174,7 @@ lint:
 
 # Production-ready local setup with services
 start:
-	@echo "Setting up Omnimesh AI Gateway Stack (production build)..."
+	@echo "Setting up MCP Gateway Stack (production build)..."
 	@if [ ! -f .env ]; then \
 		echo "Creating .env file from .env.example..."; \
 		cp .env.example .env; \
@@ -203,7 +203,7 @@ rebuild:
 
 # Restart services (clean restart)
 restart:
-	@echo "Restarting Omnimesh AI Gateway Stack..."
+	@echo "Restarting MCP Gateway Stack..."
 	@$(DOCKER_COMPOSE) down --remove-orphans
 	@docker container prune -f
 	@$(DOCKER_COMPOSE) up

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/database/repositories"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/mcp"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/database/repositories"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/mcp"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/jmoiron/sqlx"
 )
@@ -511,7 +511,7 @@ func (s *NamespaceService) ensureMCPConnection(ctx context.Context, session *Ses
 
 	// Connect to the server
 	clientInfo := mcp.ClientInfo{
-		Name:    "omnimesh-gateway",
+		Name:    "mcp-gateway",
 		Version: "1.0.0",
 		Capabilities: map[string]interface{}{
 			"tools": map[string]interface{}{

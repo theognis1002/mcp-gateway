@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"gopkg.in/yaml.v3"
 )

@@ -1,7 +1,7 @@
-# Omnimesh Gateway Architecture
+# MCP Gateway Gateway Architecture
 
 ## Overview
-The Omnimesh AI Gateway provides organization-level policies, authentication, logging, and rate limiting for MCP server access.
+The MCP Gateway provides organization-level policies, authentication, logging, and rate limiting for MCP server access.
 
 ## Core Features
 1. **Authentication & Authorization** - JWT-based auth with RBAC and flexible policies
@@ -15,7 +15,7 @@ The Omnimesh AI Gateway provides organization-level policies, authentication, lo
 ## Directory Structure
 
 ```
-omnimesh-gateway/
+mcp-gateway/
 ├── apps/
 │   ├── backend/              # Go API backend
 │   │   ├── cmd/
@@ -168,7 +168,7 @@ omnimesh-gateway/
 
 ### 8. Frontend Dashboard (`apps/frontend/`)
 - Next.js TypeScript application
-- Omnimesh Gateway management interface
+- MCP Gateway Gateway management interface
 - Real-time monitoring dashboard
 - Configuration management UI
 

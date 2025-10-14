@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/plugins/shared"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/plugins/shared"
 )
 
 // DenyFilter implements simple word/phrase blocking with violation reporting

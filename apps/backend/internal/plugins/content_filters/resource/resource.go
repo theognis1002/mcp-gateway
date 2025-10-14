@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/plugins/shared"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/plugins/shared"
 )
 
 // ResourceFilter implements URI validation, protocol filtering, domain blocking, and content filtering

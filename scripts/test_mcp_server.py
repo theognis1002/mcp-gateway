@@ -3,7 +3,7 @@
 Simple MCP Server for testing the enhanced test agent.
 
 This server provides basic tools, resources, and prompts to thoroughly test
-the comprehensive testing capabilities of the Omnimesh Gateway.
+the comprehensive testing capabilities of the MCP Gateway Gateway.
 """
 
 import asyncio

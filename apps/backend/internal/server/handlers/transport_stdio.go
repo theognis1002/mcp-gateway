@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/middleware"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/transport"
-	"github.com/omnimesh-labs/omnimesh-gateway/apps/backend/internal/types"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/middleware"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/transport"
+	"github.com/mcp-gateway/mcp-gateway/apps/backend/internal/types"
 
 	"github.com/gin-gonic/gin"
 )

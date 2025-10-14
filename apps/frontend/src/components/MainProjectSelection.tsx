@@ -13,8 +13,8 @@ type ProjectOption = {
 const projectOptions: ProjectOption[] = [
 	{
 		value: 'MCP Gateway',
-		logo: '/assets/images/logo/omnimesh-gateway.svg',
-		darkLogo: '/assets/images/logo/omnimesh-gateway-dark.svg',
+		logo: '/assets/images/logo/mcp-gateway.svg',
+		darkLogo: '/assets/images/logo/mcp-gateway-dark.svg',
 		name: 'MCP Gateway',
 		url: typeof window !== 'undefined' ? window.location.origin : ''
 	}
