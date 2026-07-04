@@ -548,6 +548,92 @@ curl -X POST http://localhost:8080/mcp/rpc \
   }'
 ```
 
+### Create Xquik Virtual Server
+```bash
+curl -X POST http://localhost:8080/api/admin/virtual-servers \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": "xquik_server",
+    "name": "Xquik API Server",
+    "description": "Xquik X data API wrapped as MCP tools",
+    "adapterType": "REST",
+    "tools": [
+      {
+        "name": "search_tweets",
+        "description": "Search X posts by query and return recent results",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "q": {
+              "type": "string",
+              "description": "Search query"
+            },
+            "limit": {
+              "type": "integer",
+              "description": "Maximum number of posts to return"
+            }
+          },
+          "required": ["q"]
+        },
+        "REST": {
+          "method": "GET",
+          "URLTemplate": "https://xquik.com/api/v1/x/tweets/search?q={q}&limit={limit}",
+          "headers": {
+            "Accept": "application/json",
+            "x-api-key": "${SECRET:XQUIK_API_KEY}"
+          },
+          "timeoutSec": 30
+        }
+      },
+      {
+        "name": "get_trends",
+        "description": "Get trending X topics by WOEID region code",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "woeid": {
+              "type": "integer",
+              "description": "Region WOEID, for example 1 for worldwide"
+            },
+            "count": {
+              "type": "integer",
+              "description": "Number of trends to return"
+            }
+          }
+        },
+        "REST": {
+          "method": "GET",
+          "URLTemplate": "https://xquik.com/api/v1/trends?woeid={woeid}&count={count}",
+          "headers": {
+            "Accept": "application/json",
+            "x-api-key": "${SECRET:XQUIK_API_KEY}"
+          },
+          "timeoutSec": 30
+        }
+      }
+    ]
+  }'
+```
+
+### Test Xquik Tweet Search
+```bash
+curl -X POST http://localhost:8080/mcp/rpc \
+  -H "Content-Type: application/json" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": "10",
+    "method": "tools/call",
+    "params": {
+      "server_id": "xquik_server",
+      "name": "search_tweets",
+      "arguments": {
+        "q": "model context protocol",
+        "limit": 10
+      }
+    }
+  }'
+```
+
 ## 5. Database Schema
 
 The virtual servers are stored in PostgreSQL with the following structure:
